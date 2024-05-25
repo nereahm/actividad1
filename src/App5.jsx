@@ -34,7 +34,7 @@ function App5() {
 
   return (
     <div className="galeriaJuegos__contenedor">
-      <h1 className="galeriaJuegos__titulo">Juegos según plataforma</h1>
+      <h1 className="galeriaJuegos__titulo">Juegos segun plataforma</h1>
       <div className="galeriaJuegos">
         {plataformas.slice(0, 12).map((plataforma, index) => (
           <div key={index} className="galeriaJuegos__plataforma">
