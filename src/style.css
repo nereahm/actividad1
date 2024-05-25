@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./Pokemon.ttf')
+}
+
+@font-face {
+    font-family: 'dragon';
+    src: url('./dragon.otf');
+}
+
+@font-face {
+    font-family: 'Games';
+    src: url('./Games.ttf');
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.galeria__contenedor {
+    background-color: #ffcc00;
+    padding: 1rem 0.5rem;
+}
+
+.galeria__titulo{
+    margin: 0 0 1rem 0;
+    font-family: 'Pokemon';
+    color: #395BA8;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 9.5rem);
+    grid-gap: .625rem;
+    padding: 0 0 1rem 0;
+    justify-content: center;
+}
+
+.galeria__pokemon {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to bottom, #F93D32 50%, white 50%);
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding: .625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.galeria__pokemon:hover {
+    transform: translateY(-5px);
+}
+
+.galeria__pokemonNombre{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.productos {
+    background-color: #a18fa5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.productos__titulo{
+    color: white;
+    font-size: 3rem;
+}
+
+.productos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.producto {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: .625rem;
+    padding: 1.25rem;
+    width: 20rem;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    justify-items: center;
+
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    border: 2px solid red;
+}
+
+.producto__titulo {
+    font-size: 1.2em;
+    margin: .625rem 0 0 0;
+}
+
+.producto__precio {
+    width: 100%;
+    font-weight: bold;
+    color: green;
+    border: 1px solid;
+    margin: 0;
+}
+
+.producto__descripcion {
+    margin: .625rem 0 0 0 0;
+    text-align: justify;
+}
+
+.producto__categoria {
+    margin: 0;
+    font-style: italic;
+    color: rgb(80, 99, 92);
+}
+
+.producto__imagen {
+    width: 15rem;
+    height: 15rem; 
+    border-radius: 5px;
+}
+
+.usuarios {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    background-color: rgb(154, 209, 212);
+    padding: 1rem 0 3rem 0;
+}
+
+.usuarios__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.usuarios__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.usuario {
+    background-color: #f0f0f0;
+    border-radius: .625rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    width: 25rem;
+    display: flex;
+    align-items: center; 
+}
+
+.usuario__imagen {
+    border-radius: 50%;
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 0 1.25rem 0 0; 
+}
+
+.usuario__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario__nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; 
+}
+
+.usuario__email,
+.usuario__ubicacion {
+    font-size: 14px;
+    margin: 3px 0; 
+}
+
+.dragon__accionesContenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 94, 94);
+}
+
+.dragon__accionesTitulo {
+    font-family: 'dragon';
+    margin: 1.25rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.dragon__acciones {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.dragon__accion {
+    width: 20rem;
+    height: 15rem;
+    margin: .625rem;
+    background-color: black; 
+    padding: 1.25rem; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.dragon__accionNombre {
+    color: white;
+    font-weight: bold; 
+}
+
+.dragon__accionNombre:hover{
+    color: yellow;
+}
+
+.dragon__accionDesc {
+    color: #8f8d8d; 
+}
+.galeriaJuegos__contenedor {
+    margin: 0;
+    padding: 1rem;
+    background-color: black;
+  }
+  
+  .galeriaJuegos__titulo {
+    color: #ffcc00; 
+    text-shadow: 2px 2px 4px rgba(211, 202, 202, 0.5);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Games';
+  }
+  
+  .galeriaJuegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+  }
+  
+  .galeriaJuegos__plataforma {
+    background-color: #535353;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #ffcc0081;
+  }
+.galeriaJuegos__nombrePlataforma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Games';
+    font-size: 2rem;
+}
+  
+  .galeriaJuegos__imgPlataforma {
+    width: 100%;
+    height: 15rem;
+    display: block;
+  }
+  
+  .lista__juegos {
+    padding: 10px;
+  }
+  
+  .lista__tituloJuegos {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:10px 0;
+  }
+  
+  .lista__listJuegos {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista__gamesJuegos {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+
+  .lista__gamesJuegos:hover{
+    color: rgb(143, 98, 180);
+    cursor: pointer;
+  }
+  
+  .lista__gamesJuegos::before {
+    content: "➤";
+    color: #ffcc00;
+    margin: 0 5px 0 0;
+  }
+  
