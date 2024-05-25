@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Pokemon';
-    src: url('./Pokemon.ttf')
+    src: url('/Pokemon.ttf')
 }
 
 @font-face {
     font-family: 'dragon';
-    src: url('./dragon.otf');
+    src: url('/dragon.otf');
 }
 
 @font-face {
     font-family: 'Games';
-    src: url('./Games.ttf');
+    src: url('/Games.ttf');
 }
 
 body{
